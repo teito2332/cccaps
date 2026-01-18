@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tienda | CCCAPS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="header-container">
+    <div class="logo-box">
+      <a href="index.html">
+        <img src="imagenesropa/logo.jpg" alt="CCCAPS" class="logo">
+      </a>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Inicio</a>
+      <a href="tienda.html" class="nav-link activo">Tienda</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
+      <a href="#envios" class="nav-link">Envíos</a>
+    </nav>
+
+    <button class="menu-mobile" id="menu-mobile">☰</button>
+  </div>
+</header>
+
+
+
+
+
+
+<!-- ================= CARRITO ================= -->
+<div id="carrito">
+  <div class="carrito-header">
+    <h3>🛒 Tu carrito <span id="badge">0</span></h3>
+    <button id="toggle-carrito">—</button>
+    <button id="vaciar" class="btn">VACIAR</button>
+  </div>
+
+  <ul id="lista-carrito"></ul>
+
+  <p class="total">Total: $<span id="total">0</span> ARS</p>
+  <button id="finalizar-compra" class="btn finalizar">FINALIZAR COMPRA</button>
+</div>
+
+<!-- ================= FILTROS ================= -->
+<div class="filtros">
+  <button class="filtro activo" data-cat="todos">Todos</button>
+  <button class="filtro" data-cat="remeras">Remeras</button>
+  <button class="filtro" data-cat="pantalones">Pantalones</button>
+  <button class="filtro" data-cat="shorts">Shorts</button>
+  <button class="filtro" data-cat="boxer">Boxer</button>
+  <button class="filtro" data-cat="medias">Medias</button>
+  <button class="filtro" data-cat="morral">Morral</button>
+</div>
+
+<!-- ================= PRODUCTOS ================= -->
+<section class="productos">
+
+<!-- ========== REMERAS ========== -->
+<div class="producto" data-cat="remeras">
+  <div class="img-box">
+    <img src="imagenesropa/productos/REMERA BANGKOK JAPONESA OVERSIDE.jpg" class="front">
+    <img src="imagenesropa/productos/REVERSO BANGKOK JAPONESA OVERSIDE.jpg" class="back">
+  </div>
+  <h3>REMERA BANGKOK JAPONESA OVERSIZE</h3>
+  <div class="stars">★★★★★</div>
+  <p class="precio">$28.000 <span>ARS</span></p>
+  <div class="acciones">
+    <input type="number" min="1" value="1" class="cantidad">
+    <button class="btn add-cart" data-nombre="REMERA BANGKOK JAPONESA OVERSIZE" data-precio="28000" data-stock="5">AGREGAR</button>
+    <a class="ver-detalle" href="producto.html?nombre=REMERA%20BANGKOK%20JAPONESA%20OVERSIZE&precio=28000&img=imagenesropa/productos/REMERA%20BANGKOK%20JAPONESA%20OVERSIDE.jpg">Ver detalle</a>
+  </div>
+</div>
+
+<div class="producto" data-cat="remeras">
+  <div class="img-box">
+    <img src="imagenesropa/productos/REMERA BANGKOK OVERSIDE.jpg" class="front">
+    <img src="imagenesropa/productos/REMERA BANGKOK OVERSIDE-REVERSO.jpg" class="back">
+  </div>
+  <h3>REMERA BANGKOK OVERSIZE</h3>
+  <div class="stars">★★★★★</div>
+  <p class="precio">$28.000 <span>ARS</span></p>
+  <div class="acciones">
+    <input type="number" min="1" value="1" class="cantidad">
+    <button class="btn add-cart" data-nombre="REMERA BANGKOK OVERSIZE" data-precio="28000" data-stock="5">AGREGAR</button>
+    <a class="ver-detalle" href="producto.html?nombre=REMERA%20BANGKOK%20OVERSIZE&precio=28000&img=imagenesropa/productos/REMERA%20BANGKOK%20OVERSIDE.jpg">Ver detalle</a>
+  </div>
+</div>
+
+<!-- ========== BERMUDAS JEAN ========== -->
+<div class="producto" data-cat="pantalones">
+  <div class="img-box">
+    <img src="imagenesropa/productos/BERMUDA BAGYY JEAN FULL BLACK.jpg" class="front">
+    <img src="imagenesropa/productos/PARTE TRASERA BERMUDA BAGYY JEAN FULL BLACK.jpg" class="back">
+  </div>
+  <h3>BERMUDA BAGGY JEAN FULL BLACK</h3>
+  <div class="stars">★★★★★</div>
+  <p class="precio">$50.000 <span>ARS</span></p>
+  <div class="acciones">
+    <input type="number" min="1" value="1" class="cantidad">
+    <button class="btn add-cart" data-nombre="BERMUDA BAGGY JEAN FULL BLACK" data-precio="50000" data-stock="5">AGREGAR</button>
+    <a class="ver-detalle" href="producto.html?nombre=BERMUDA%20BAGGY%20JEAN%20FULL%20BLACK&precio=50000&img=imagenesropa/productos/BERMUDA%20BAGYY%20JEAN%20FULL%20BLACK.jpg">Ver detalle</a>
+  </div>
+</div>
+
+<div class="producto" data-cat="pantalones">
+  <div class="img-box">
+    <img src="imagenesropa/productos/BERMUDA BAGYY JEAN DISEÑO TELA.jpg" class="front">
+    <img src="imagenesropa/productos/PARTE TRASERA BERMUDA BAGYY JEAN DISEÑO TELA.jpg" class="back">
+  </div>
+  <h3>BERMUDA BAGGY JEAN DISEÑO TELA</h3>
+  <div class="stars">★★★★★</div>
+  <p class="precio">$50.000 <span>ARS</span></p>
+  <div class="acciones">
+    <input type="number" min="1" value="1" class="cantidad">
+    <button class="btn add-cart" data-nombre="BERMUDA BAGGY JEAN DISEÑO TELA" data-precio="50000" data-stock="5">AGREGAR</button>
+    <a class="ver-detalle" href="producto.html?nombre=BERMUDA%20BAGGY%20JEAN%20DISEÑO%20TELA&precio=50000&img=imagenesropa/productos/BERMUDA%20BAGYY%20JEAN%20DISEÑO%20TELA.jpg">Ver detalle</a>
+  </div>
+</div>
+
+<div class="producto" data-cat="pantalones">
+  <div class="img-box">
+    <img src="imagenesropa/productos/BERMUDA BAGYY JEAN SUBLIMADO.jpg" class="front">
+    <img src="imagenesropa/productos/PARTE TRASERA BERMUDA BAGYY SUBLIMADO.jpg" class="back">
+  </div>
+  <h3>BERMUDA BAGGY JEAN SUBLIMADA</h3>
+  <div class="stars">★★★★★</div>
+  <p class="precio">$50.000 <span>ARS</span></p>
+  <div class="acciones">
+    <input type="number" min="1" value="1" class="cantidad">
+    <button class="btn add-cart" data-nombre="BERMUDA BAGGY JEAN SUBLIMADA" data-precio="50000" data-stock="5">AGREGAR</button>
+    <a class="ver-detalle" href="producto.html?nombre=BERMUDA%20BAGGY%20JEAN%20SUBLIMADA&precio=50000&img=imagenesropa/productos/BERMUDA%20BAGYY%20JEAN%20SUBLIMADO.jpg">Ver detalle</a>
+  </div>
+</div>
+
+<!-- ========== SHORT ========== -->
+<div class="producto" data-cat="shorts">
+  <div class="img-box">
+    <img src="imagenesropa/productos/SHORTS BASQUET MAGIC.jpg" class="front">
+  </div>
+  <h3>SHORT BÁSQUET MAGIC</h3>
+  <div class="stars">★★★★★</div>
+  <p class="precio">$45.000 <span>ARS</span></p>
+  <div class="acciones">
+    <input type="number" min="1" value="1" class="cantidad">
+    <button class="btn add-cart" data-nombre="SHORT BÁSQUET MAGIC" data-precio="45000" data-stock="5">AGREGAR</button>
+    <a class="ver-detalle" href="producto.html?nombre=SHORT%20BÁSQUET%20MAGIC&precio=45000&img=imagenesropa/productos/SHORTS%20BASQUET%20MAGIC.jpg">Ver detalle</a>
+  </div>
+</div>
+
+<!-- ========== MORRALES ========== -->
+<div class="producto" data-cat="morral">
+  <div class="img-box">
+    <img src="imagenesropa/productos/MORRAL MODELO 1 UNA PIEZA.jpg" class="front">
+  </div>
+  <h3>MORRAL MODELO 1 UNA PIEZA</h3>
+  <div class="stars">★★★★★</div>
+  <p class="precio">$15.000 <span>ARS</span></p>
+  <div class="acciones">
+    <button class="btn add-cart"
+      data-nombre="MORRAL MODELO 1 UNA PIEZA"
+      data-precio="15000"
+      data-stock="5">
+      AGREGAR
+    </button>
+    <a class="ver-detalle"
+      href="producto.html?nombre=MORRAL%20MODELO%201%20UNA%20PIEZA&precio=15000&img=imagenesropa/productos/MORRAL%20MODELO%201%20UNA%20PIEZA.jpg">
+      Ver detalle
+    </a>
+  </div>
+</div>
+
+<div class="producto" data-cat="morral">
+  <div class="img-box">
+    <img src="imagenesropa/productos/MORRAL DESMONTABLE.jpg" class="front">
+  </div>
+  <h3>MORRAL DESMONTABLE</h3>
+  <div class="stars">★★★★★</div>
+  <p class="precio">$15.000 <span>ARS</span></p>
+  <div class="acciones">
+    <button class="btn add-cart"
+      data-nombre="MORRAL DESMONTABLE"
+      data-precio="15000"
+      data-stock="5">
+      AGREGAR
+    </button>
+    <a class="ver-detalle"
+      href="producto.html?nombre=MORRAL%20DESMONTABLE&precio=15000&img=imagenesropa/productos/MORRAL%20DESMONTABLE.jpg">
+      Ver detalle
+    </a>
+  </div>
+</div>
+
+<!-- ========== MEDIAS ========== -->
+<div class="producto" data-cat="medias">
+  <div class="img-box">
+    <img src="imagenesropa/productos/MEDIAS 3-4 NEGRAS.jpg" class="front">
+  </div>
+  <h3>MEDIAS 3/4 NEGRAS (PACK X2)</h3>
+  <div class="stars">★★★★★</div>
+  <p class="precio">$5.000 <span>ARS</span></p>
+  <div class="acciones">
+    <button class="btn add-cart"
+      data-nombre="MEDIAS 3/4 NEGRAS (PACK X2)"
+      data-precio="5000"
+      data-stock="10">
+      AGREGAR
+    </button>
+    <a class="ver-detalle"
+      href="producto.html?nombre=MEDIAS%203-4%20NEGRAS%20PACK%20X2&precio=5000&img=imagenesropa/productos/MEDIAS%203-4%20NEGRAS.jpg">
+      Ver detalle
+    </a>
+  </div>
+</div>
+
+<!-- ========== BOXER ========== -->
+<div class="producto" data-cat="boxer">
+  <div class="img-box">
+    <img src="imagenesropa/productos/BOXER CALVIN KLEIN.jpg" class="front">
+  </div>
+  <h3>BOXER CALVIN KLEIN (PACK X2)</h3>
+  <div class="stars">★★★★★</div>
+  <p class="precio">$20.000 <span>ARS</span></p>
+  <div class="acciones">
+    <button class="btn add-cart"
+      data-nombre="BOXER CALVIN KLEIN (PACK X2)"
+      data-precio="20000"
+      data-stock="5">
+      AGREGAR
+    </button>
+    <a class="ver-detalle"
+      href="producto.html?nombre=BOXER%20CALVIN%20KLEIN%20PACK%20X2&precio=20000&img=imagenesropa/productos/BOXER%20CALVIN%20KLEIN.jpg">
+      Ver detalle
+    </a>
+  </div>
+</div>
+<section id="contacto" class="info-section">
+  <h2>📞 Contacto</h2>
+  <p>Escribinos por WhatsApp o Instagram y respondemos al instante.</p>
+
+  <div class="info-links">
+    <a href="https://wa.me/5493516455375" target="_blank" class="btn">
+      WhatsApp
+    </a>
+    <a href="https://instagram.com/cccaps" target="_blank" class="btn">
+      Instagram
+    </a>
+  </div>
+</section>
+<section id="envios" class="info-section">
+  <h2>🚚 Envíos</h2>
+  <ul>
+    <li>📦 Envíos a todo el país</li>
+    <li>🏠 Entregas en puntos acordados</li>
+    <li>⏱️ Despacho en 24/48 hs</li>
+    <li>💬 Coordinación por WhatsApp</li>
+  </ul>
+</section>
+
+
+</section>
+
+<footer>© 2026 CCCAPS</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

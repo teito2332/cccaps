@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Producto | CCCAPS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+<header>
+  <div class="header-container">
+    <img src="imagenesropa/logo.jpg" class="logo">
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="tienda.html">Tienda</a>
+    </nav>
+  </div>
+</header>
+
+<section class="producto-detalle">
+  <div class="galeria">
+    <img id="img-principal">
+  </div>
+
+  <div class="info">
+    <h1 id="nombre"></h1>
+    <p class="precio">$<span id="precio"></span> ARS</p>
+
+    <input type="number" min="1" value="1" id="cantidad">
+
+    <button class="btn" id="agregar">
+      AGREGAR AL CARRITO
+    </button>
+  </div>
+</section>
+
+<script src="js/producto.js"></script>
+</body>
+</html>
+
